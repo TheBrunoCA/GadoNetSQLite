@@ -20,3 +20,15 @@ mono_crash.*.json
 # other
 build/
 builds/
+
+/addons/*
+!/addons/gado_sqlite/
+
+/assets/
+
+/tests/
+
+*.csproj
+*.sln
+*.db
+*.zip

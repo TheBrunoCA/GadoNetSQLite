@@ -1,11 +1,33 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
 config_version=5
 
 [application]
+
 config/name="GadoNetSqlite"
-config/features=PackedStringArray("4.6")
+config/features=PackedStringArray("4.6", "C#")
 config/icon="res://assets/icon.svg"
 
+[autoload]
+
+GadoNetBridge="*uid://o1q8hmxre7p8"
+GadoNet="*uid://dqyvr7i6jdcec"
+
+[dotnet]
+
+project/assembly_name="GadoNetSqlite"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gado_net/plugin.cfg", "res://addons/gado_sqlite/plugin.cfg", "res://addons/simple_gdscript_formatter/plugin.cfg")
 
 [rendering]
+
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
