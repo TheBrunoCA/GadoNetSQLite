@@ -15,5 +15,5 @@ func _init(connection_string: String) -> void:
 	super._init(PROVIDER_NAME, connection_string)
 
 
-func _get_csharp_factory_scripts() -> CSharpScript:
+func _get_csharp_factory_script() -> CSharpScript:
 	return preload("uid://vo1gs53st65d")
